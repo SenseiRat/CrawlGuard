@@ -50,7 +50,7 @@ Access via app stores is planned once the project has moved past MVP.
 To make changes locally:
 
 ```bash
-git clone https://github.com/yourname/crawlguard.git
+git clone https://github.com/SenseiRat/crawlguard.git
 cd crawlguard
 # Edit files in the extension/ directory
 ```
