@@ -1,5 +1,22 @@
 # CrawlGuard Project Roadmap
 
+## ✅ Immediate Todos
+
+1. **Expand context menu triggers**
+   - Update `background.js` to include `"editable"` and `"page"` in the `contexts` array.
+   - This will allow the user to activate the plugin even without a selection (useful for future features like full-page protection).
+
+2. **Track context menu creation more robustly**
+   - Add guards or checks in `background.js` to avoid duplicate context menu creation.
+   - Optional: log or debug when the menu is successfully created.
+
+---
+
+## 🧪 Experimental / Research
+
+*(Move roadmap items here as they begin development.)*
+
+
 ## ✅ Phase 0 – Core Foundation (Done or In Progress)
 - [x] Create branding, icon set, and project identity  
 - [x] Write initial README and license (Apache 2.0)  
