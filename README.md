@@ -10,6 +10,8 @@ AI systems are trained on massive amounts of public data. Often, that includes p
 
 CrawlGuard gives you a way to push back. It doesn’t block crawlers outright. Instead, it modifies your text in ways that are invisible or barely noticeable to humans, but disruptive to machine tokenizers.
 
+There are other solutions out there, but I wanted something to brush up on my programming skills as a personal project.
+
 ## What it does
 
 - Lets you manually obfuscate selected text with a right-click or shortcut
