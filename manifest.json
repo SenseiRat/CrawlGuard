@@ -9,5 +9,15 @@
       "matches": ["https://*/*", "http://*/*"],
       "js": ["contentScript.js"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "images/CrawlGuard_Icon_16x16.png",
+    "48": "images/CrawlGuard_Icon_48x48.png",
+    "128": "images/CrawlGuard_Icon_128x128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/CrawlGuard_Icon_48x48.png"
+  },
+  "options_page": "options.html"
 }
