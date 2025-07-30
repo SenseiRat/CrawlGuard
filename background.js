@@ -11,3 +11,11 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
     chrome.tabs.sendMessage(tab.id, { action: "protect" });
   }
 });
+chrome.tabs.sendMessage(tab.id, { action: "protect" }, (response) => {
+  if (chrome.runtime.lastError) {
+    console.error("SendMessage failed:", chrome.runtime.lastError);
+  } else {
+    console.log("Response:", response);
+  }
+});
+
