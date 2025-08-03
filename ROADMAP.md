@@ -1,5 +1,46 @@
 # CrawlGuard Project Roadmap
 
+## ✅ Immediate Todos
+
+1. **Expand context menu triggers**
+   - Update `background.js` to include `"editable"` and `"page"` in the `contexts` array.
+   - This will allow the user to activate the plugin even without a selection (useful for future features like full-page protection).
+
+2. **Track context menu creation more robustly**
+   - Add guards or checks in `background.js` to avoid duplicate context menu creation.
+   - Optional: log or debug when the menu is successfully created.
+
+3. **Expose aggressiveness as a configurable setting later (e.g., "light", "medium", "paranoid").**
+
+4. Preserve formatting
+   - If the selection includes formatting (like bold), this will strip it.
+   - Replace text inside text nodes, not the full range.
+   - Walk the DOM and selectively rewrite text nodes only.
+
+5. Edge case: partial selections inside <input> or <textarea>
+   - The code currently doesn’t work on inputs. To support that:
+     ```
+     const active = document.activeElement;
+     if (active && (active.tagName === "TEXTAREA" || active.tagName === "INPUT")) {
+       const start = active.selectionStart;
+       const end = active.selectionEnd;
+       const text = active.value.substring(start, end);
+       const ob = obfuscate(text);
+       active.setRangeText(ob);
+       return;
+     }
+     ```
+
+6. Consider making it automated as someone types into a text field
+
+7. Randomize between inserting text with zero-width <wbr> and splicing into textNode.nodeValue
+---
+
+## 🧪 Experimental / Research
+
+*(Move roadmap items here as they begin development.)*
+
+
 ## ✅ Phase 0 – Core Foundation (Done or In Progress)
 - [x] Create branding, icon set, and project identity  
 - [x] Write initial README and license (Apache 2.0)  

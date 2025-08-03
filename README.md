@@ -1,6 +1,6 @@
 # CrawlGuard
 
-CrawlGuard is a browser extension that helps protect your writing from being scraped and ingested by AI models. It adds subtle changes to your text that don’t affect how people read it, but make it harder for automated systems to parse.
+CrawlGuard is a browser extension that helps protect your content from being scraped and ingested by AI models. It adds subtle changes to your text that don’t affect how people view it, but make it harder for automated systems to parse.
 
 This tool is designed for writers, artists, and anyone who wants more control over how their online content is treated.
 
@@ -8,7 +8,7 @@ This tool is designed for writers, artists, and anyone who wants more control ov
 
 AI systems are trained on massive amounts of public data. Often, that includes personal blogs, creative writing, social posts, and other content that was never meant to be repurposed or monetized by someone else.
 
-CrawlGuard gives you a way to push back. It doesn’t block crawlers outright. Instead, it modifies your text in ways that are invisible or barely noticeable to humans, but disruptive to machine tokenizers.
+CrawlGuard gives you a way to push back. It doesn’t block crawlers outright. Instead, it modifies your text in ways that are invisible or barely noticeable to humans, but disruptive to machine tokenizers.  The goal is to make your content computationally expensive to parse so that it makes it more cost-efficient for large-scale AI companies to properly and legally license it.
 
 There are other solutions out there, but I wanted something to brush up on my programming skills as a personal project.
 
@@ -91,3 +91,5 @@ For the full roadmap, see [ROADMAP.md](./ROADMAP.md).
 ## Credits
 
 Created by [Sean Starnes](https://starnes.cloud). Inspired by the growing need for digital self-defense tools that work with, not against, the open web.  Special thanks to the cybersecurity and privacy community for providing tools, inspiration, and the foundation needed for this project.  Additional thanks to the UT Austin MSISP program for creating the environment where ideas like this could flourish.
+
+Dedicated to my son, who enjoys working with me even if he doesn't know what we're doing together.
