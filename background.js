@@ -7,15 +7,14 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-  if (info.menuItemId === "protectText" && tab.id) {
-    chrome.tabs.sendMessage(tab.id, { action: "protect" });
-  }
-});
-chrome.tabs.sendMessage(tab.id, { action: "protect" }, (response) => {
-  if (chrome.runtime.lastError) {
-    console.error("SendMessage failed:", chrome.runtime.lastError);
-  } else {
-    console.log("Response:", response);
+  if (info.menuItemId === "protectText" && tab?.id) {
+    chrome.tabs.sendMessage(tab.id, { action: "protect" }, (response) => {
+      if (chrome.runtime.lastError) {
+        console.error("SendMessage failed:", chrome.runtime.lastError);
+      } else {
+        console.log("Response:", response);
+      }
+    });
   }
 });
 
